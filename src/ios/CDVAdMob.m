@@ -893,6 +893,10 @@
     [self fireEvent:@"" event:@"admob.rewardvideo.events.OPEN" withData:nil];
 }
 
+- (void)rewardBasedVideoAdDidCompletePlaying:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
+    [self fireEvent:@"" event:@"admob.rewardvideo.events.COMPLETED" withData:nil];
+}
+
 - (void)rewardBasedVideoAdDidStartPlaying:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
     [self fireEvent:@"" event:@"admob.rewardvideo.events.START" withData:nil];
 }
