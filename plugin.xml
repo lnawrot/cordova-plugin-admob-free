@@ -26,7 +26,9 @@
     </js-module>
 
     <dependency id="cordova-promise-polyfill" version="~0.0.2" />
-    <dependency id="cordova-admob-sdk" version="~0.20.0" />
+    <dependency id="cordova-admob-sdk" version="~0.20.0">
+        <param name="PLAY_SERVICES_VERSION" value="11.8.0" />
+    </dependency>
 
     <platform name="android">
         <config-file parent="/manifest/application" target="AndroidManifest.xml">
