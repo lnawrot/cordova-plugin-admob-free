@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-admob-free"
-    version="0.17.2" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    version="0.20.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>Cordova AdMob Plugin</name>
     <description>Robust, reliable and easy to use Cordova Admob plugin for Android and iOS
         phone. Allows preloading and automatic loading of interstitials and banners plus more.
@@ -26,7 +26,7 @@
     </js-module>
 
     <dependency id="cordova-promise-polyfill" version="~0.0.2" />
-    <dependency id="cordova-admob-sdk" version="~0.17.0" />
+    <dependency id="cordova-admob-sdk" version="~0.20.0" />
 
     <platform name="android">
         <config-file parent="/manifest/application" target="AndroidManifest.xml">

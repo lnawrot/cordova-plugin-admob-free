@@ -2,11 +2,21 @@
 
 A free, no ad-sharing version of Google AdMob plugin for Cordova.
 
+## Status
+
+I have been asking the interest about [funding this project](https://github.com/ratson/cordova-plugin-admob-free/issues/161) a while, got some encouraging feedback, finally have setup [a funding page](https://ratson.name/fund-admob-plus/).
+
+I am actively developing [admob-plus](https://github.com/admob-plus/admob-plus) for the last few weeks, it is usable for most cases, please try it out and give feedback.
+
+While my focus is `admob-plus`, I will keep maintaining `cordova-plugin-admob-free` until all exisiting features are available with the new plugin.
+
+If you are earning more than USD$200 monthly from using this plugin, please consider [funding my work](https://ratson.name/fund-admob-plus/).
+
 ## Features
 
 * **No Ad-Sharing**
 
-  Unlike [some](https://github.com/appfeel/admob-google-cordova/blob/3f122f278a323a4bc9e580f400182a7bd690a346/src/android/AdMobAds.java#L569) [other](https://github.com/sunnycupertino/cordova-plugin-admob-simple/blob/a58846c1ea14188a4aef44381ccd28ffdcae3bfa/src/android/AdMob.java#L207) [plugins](https://github.com/floatinghotpot/cordova-admob-pro/wiki/License-Agreement#2-win-win-partnership), this plugin does not share your advertising revenue by randomly display developer's owned ads.
+  Unlike [some](https://github.com/appfeel/admob-google-cordova/blob/3f122f278a323a4bc9e580f400182a7bd690a346/src/android/AdMobAds.java#L569) [other](https://github.com/sunnycupertino/cordova-plugin-admob-simple/blob/a58846c1ea14188a4aef44381ccd28ffdcae3bfa/src/android/AdMob.java#L207) [plugins](https://github.com/floatinghotpot/cordova-admob-pro/wiki/License-Agreement#3-win-win-partnership), this plugin does not share your advertising revenue by randomly display developer's owned ads.
 
 * **Fully Open Sourced**
 
@@ -91,14 +101,6 @@ If you need a different version, edit `config.xml` with following,
 ```
 
 Note that if you are adding these lines to an existing project, you need to remove both `admob-free` plugin and `android` platform and add them back again to affect the version number.
-
-## Status
-
-This plugin is forked from [cordova-plugin-admob-simple](https://github.com/sunnycupertino/cordova-plugin-admob-simple) and removed the ad-sharing related code.
-
-The code for Android has almost all rewritten to be more maintainable, plus some extra features.
-
-For iOS, while it is working, I have less interest in writing Objective-C code these days. If someone is willing to help, feel free to send a pull request, I will review it.
 
 ## Contributing
 
