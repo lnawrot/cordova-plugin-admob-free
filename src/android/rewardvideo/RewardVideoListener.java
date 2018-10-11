@@ -50,7 +50,7 @@ class RewardVideoListener implements RewardedVideoAdListener {
         synchronized (executor.rewardedVideoLock) {
             executor.isRewardedVideoLoading = false;
         }
-        Log.w("AdMob", "RewardedVideoAdLoaded", executor.getMediationAdapter());
+        Log.w("AdMob", "RewardedVideoAdLoaded adapter = " + executor.getMediationAdapter());
         executor.fireAdEvent("admob.rewardvideo.events.LOAD");
 
         if (executor.shouldAutoShow()) {
@@ -85,7 +85,7 @@ class RewardVideoListener implements RewardedVideoAdListener {
             e.printStackTrace();
         }
         executor.fireAdEvent("admob.rewardvideo.events.REWARD", data);
-        Log.w("AdMob", "RewardedVideoAdRewarded", executor.getMediationAdapter());
+        Log.w("AdMob", "RewardedVideoAdRewarded adapter = " + executor.getMediationAdapter());
     }
 
     public void onRewardedVideoCompleted() {
