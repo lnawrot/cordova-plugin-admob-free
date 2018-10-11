@@ -73,6 +73,14 @@ public class RewardVideoExecutor extends AbstractExecutor {
         rewardedVideoAd = null;
     }
 
+    public String getMediationAdapter() {
+        if (rewardedVideoAd == null) {
+            return "";
+        }
+
+        return rewardedVideoAd.getMediationAdapterClassName();
+    }
+
     public PluginResult showAd(final boolean show, final CallbackContext callbackContext) {
         if (rewardedVideoAd == null) {
             return new PluginResult(PluginResult.Status.ERROR, "rewardedVideoAd is null, call createRewardVideo first.");
