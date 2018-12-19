@@ -3,6 +3,7 @@
 
 #import "CDVAdMob.h"
 
+#import <GoogleMobileAds/GADMobileAds.h>
 #import <GoogleMobileAds/GADExtras.h>
 
 @interface CDVAdMob()
@@ -76,6 +77,8 @@
          name:UIDeviceOrientationDidChangeNotification
          object:nil];
     }
+
+    [GADMobileAds disableAutomatedInAppPurchaseReporting];
 
     bannerShow = true;
     publisherId = DEFAULT_BANNER_ID;
